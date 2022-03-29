@@ -257,7 +257,7 @@ body {
 }
 /* Factory  */
 #factory{
-  background-image: url(placeholder_svgs/factory.svg);
+  background-image: url(graphics/factory.svg);
   transform: translateZ(-1px)translateY(2760px);
   height: 1700px;
 }
@@ -365,7 +365,7 @@ height:1850px;
 }
 
 #garbage{ 
-  background-image: url(placeholder_svgs/garbage.svg);
+  background-image: url(graphics/garbage.svg);
   transform: translateZ(-0.5px) translateY(5340px);
   height: 1765px; 
 }
