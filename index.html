@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="index.js"></script>
+        <script src='comps/truefalse.js'></script>
+        <script src='comps/multichoice.js'></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="comps/prct_circle.js"></script>
+        <script src="comps/fact.js"></script>
+        <script src="comps/totop.js"></script>
+        <script src="comps/deforestbutton.js"></script>
+        <title>DCD - Midterm</title>
+</head>
+
+<body>
+        <!-- <to-top></to-top> -->
+        <div class="top"></div>
+        <div id="title">
+                <img id="deforestation" src="animations/deforestation_text.png">
+                <p class="quote">“In a world of constant change and streaming technology, I find solace in the forest where a tree reamins a tree.” </p>
+                <p class="ref">- Angie Weiland-Crosby </p>
+                <img id ="explore" src="animations/scroll_icon.png">
+        </div>
+        <div class="parallax">
+                <div class="group">
+                        <div id="sun" class="layer">
+                                <img src="graphics/Sun.svg" alt="sun">
+                        </div>
+                        <div id="mountain1" class="layer"></div>
+                        <div id="mountain2" class="layer"></div>
+                        <div id="bg1" class="layer"></div>
+                        <div id="bg2" class="layer"></div>
+                        <div id="middle" class="layer">
+                                <img class="birds" src="animations/BirdsFlying_Export.gif">
+                                <div class="card card1">
+                                        <multi-choice qstn="How do tree roots affect local areas?" ; answer="o4" ;
+                                                o1="Prevent land slides" ; o2="Generate nutrients" ; o3="Purify water" ;
+                                                o4="All of the above" ;>
+                                        </multi-choice>
+                                </div>
+                                <div id="stumps" class="layer">
+                                        <div class = "card card2">                                                <multi-choice 
+                                                        qstn="How many hectares of forest are cut globally each year?";             
+                                                        answer="o1" ; 
+                                                        o1="10,000,000 ha" ;
+                                                        o2="5,000,000 ha" ; 
+                                                        o3="20,000,000 ha" ;
+                                                        o4="1,000,000 ha" ;>
+                                                </multi-choice>
+                                        </div>
+                                </div>
+                        </div>
+                        <div id="middledeer" class="layer">
+                                <div class="card card3">
+                                        <the-fact
+                                        fact="As more animals are pushed out of their habitat, the more human encounters occur."
+                                        ></the-fact>
+                                </div>
+                                <img class = "bear" src="animations/Bear.svg">
+
+                                <div class="card card4">
+                                        <prct-circle
+                                        img="graphics/80.svg"
+                                        text="of land species call a forest home."
+                                        ></prct-circle>
+                                </div>
+                                <img class = "hare" src = "animations/Hare.svg">
+                                <img class="deer1" src="animations/Deer1.svg">
+                                <img class="deer2" src="animations/Deer2.svg">
+                                <img class="deer3" src="animations/Deer3.svg">
+                                
+                                <div id="factory" class="layer">
+                                        <div class="card card5">
+                                                <prct-circle
+                                                img="graphics/15.svg"
+                                                text="of all greenhouse gas emissions come from deforestation."
+                                                ></prct-circle>
+                                        </div>
+                                        <div class = "logging">
+                                                <lottie-player class = "road" src="https://assets4.lottiefiles.com/private_files/lf30_jsageciz.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>                                               
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div id="precity" class="layer">
+                                <div class="card card6">
+                                        <the-fact
+                                        fact="Valuable minerals and nutrients are recycled through trees into the soil to develop thriving ecosystems."
+                                        ></the-fact>
+                                </div>
+                                <div id="city" class="layer">
+                                        <div class="card card7">
+                                                <true-false
+                                                        qstn="An acre of forest absorbs twice the average cars emissions for a year"
+                                                        answer="true"
+                                                ></true-false>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div id="coast" class="layer">
+                                <div class="card card8">
+                                        <multi-choice
+                                        qstn = "How many species have gone extinct due to deforestation?"
+                                        answer = "o4"
+                                        o1="51"
+                                        o2="23"
+                                        o3="64"
+                                        o4="137"
+                                        
+                                        > </multi-choice>
+                                </div>
+                                <div class="card card9">
+                                        <true-false
+                                                qstn="Half the global population relies on forested watersheds for their drinking water. "
+                                                answer="true"
+                                        ></true-false>
+                                </div>   
+                                <img class = "coast_front" src="graphics/coastfront_update.svg">
+                                <lottie-player class = "ripple" src="https://assets7.lottiefiles.com/private_files/lf30_4ibcta64.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>      
+                                <img class="otter" src="animations/Otter-Gif_Exported.gif">
+                                <img class = "coast_front" src="graphics/coastfront_update.svg">
+                                <lottie-player class = "wave" src="https://assets6.lottiefiles.com/private_files/lf30_1s9mzl82.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                                <img class = "turtle" src = "animations/Turtle.svg">
+                                <img class="kelp seaweed" src="animations/Kelp.svg">
+                                <img class="sw1 seaweed" src="animations/Seaweed1.svg">
+                                <img class="sw2 seaweed" src="animations/Seaweed2.svg">
+                                <div id = "garbage" class = "layer"> 
+                                        <img class="bottle" src="graphics/bottle.svg">
+                                        <img class="mask" src="graphics/mask.svg">
+                                        <img class="rings" src="graphics/6pack.svg">
+                                        <img class="bag" src="graphics/bag.svg">
+                                        <div class="card card10">
+                                                <the-fact
+                                                fact="Without tree root systems, rain washes dirt and chemicals into nearby bodies of water, harming fish and contaminating drinking water."
+                                                ></the-fact>
+                                        </div>
+                                </div>
+                                <img class ="whale" src = "animations/whale.gif">
+                                <img class="fish" src="animations/FishShadow5.svg">
+                                <img class="seahorse" src="animations/FishShadow4.svg">
+                                <img class="footer" src = "graphics/resources_text.svg">
+                                <img class="oct" src="graphics/Octopus.svg">
+                                <div class="fbutton1">
+                                        <the-button
+                                        href="https://treecanada.ca"
+                                        img="graphics/DonateTree_Label.svg"
+                                ></the-button>
+                                </div>
+                                <div class="fbutton2">
+                                        <the-button
+                                        href="https://www.nrdc.org/save-canadian-boreal"
+                                        img="graphics/Petition_Label.svg"
+                                        ></the-button>
+                                </div>
+                                <div class="fbutton3">
+                                        <the-button
+                                        href="https://www.wildernesscommittee.org/ProtectBCOld-Growth"
+                                        img="graphics/Protect_Label.svg"
+                                        ></the-button>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</body>
+
+</html>

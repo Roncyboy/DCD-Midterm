@@ -1,0 +1,541 @@
+/* Main content */
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #ceecf2;
+  margin: 0;
+  overflow-y: hidden;
+}
+/* Tittle */
+#title{
+  width: 100vw;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 150px;
+}
+.quote {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+  color: #253527;
+  margin: 0px;
+  margin-top: 2vh;
+  max-width: 70%;
+}
+.ref {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+  font-style: italic;
+  color: #253527;
+}
+#explore{
+  width: 10vw;
+}
+#deforestation{
+  width: 50vw;
+}
+/* Scroll set up */
+.parallax {
+  perspective: 1px;
+  perspective-origin: center;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  height: 200vh; 
+}
+
+.parallax .group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Cards and text boxes */
+.card{
+  position: absolute;
+  width: 40%;
+}
+
+.card1{
+  top: 600px;
+  left: 26vw;
+  position: absolute;
+  z-index: 2;
+}
+
+.card2{
+  top:2250px;  
+  left:35vw;
+}
+
+.card3 {
+  top: 900px;
+  left: 34vw;
+  width: 76%;
+}
+
+.card4 {
+  top: 1875px;
+  left: 45vw;
+  width: 60%;
+}
+
+.card5 {
+  top: 550px;
+  left: 40vw;
+  width: auto;
+}
+
+.card6 {
+  top: 1200px;
+  left: 35vw;
+  width: 75%;
+}
+
+.card7 {
+  top: 700px;
+  left: 46vw;
+  width: 80%;
+}
+
+.card8 {
+  top: 2100px;
+  left: 53vw;
+}
+
+.card9{
+  top: 4440px;
+  left: 51vw;
+  width: 75%;
+}
+
+.card10 {
+  top: 600px;
+  left: 40vw;
+  width: 65%;
+}
+/* Mountains and top background */
+#mountain1 {
+  background-image: url(graphics/mountain1.svg);
+  transform: translateZ(-6.5px) scale(6) scaleX(1.5) translateY(135px);
+}
+#mountain2 {
+  background-image: url(graphics/mountain2.svg);
+  transform: translateZ(-6px) scale(5) scaleX(1.5) translateY(185px);
+}
+
+#sun {
+  fill: #ff7e00;
+  transform: translateZ(-7px) scale(3) translateY(50px);
+  height: 100%;
+}
+
+#bg1 {
+  background-image: url(graphics/backhill1_update.svg);
+  transform: translateZ(-3px) scale(4)translateY(415px);
+  height: 1500px;
+}
+
+#bg2 {
+  background-image: url(graphics/backhill2_update.svg);
+  transform: translateZ(-3px) scale(4.5) translateY(740px);
+  height: 2300px;
+}
+/* Middle of page and tree */
+#middle {
+  background-image: url(graphics/middle_update.svg);
+  transform: translateZ(-1px) scale(2.1) translateY(2783px);
+  height: 6200px;
+}
+
+.birds {
+  transform: translateY(-1472px) scale(0.2);
+  position: absolute;
+  left: 100vw;
+}
+
+#stumps{
+  background-image: url(graphics/middle_stumps_update.svg);
+  transform: translateZ(-1px) translateX(-19px);
+  position: absolute;
+  top: -3px;
+}
+/* Animations */
+@keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  } 
+}
+
+@keyframes leftToRight {
+  from{
+    left: 0vw;
+  }
+  30%{
+    left:30vw;
+  }
+  70%{
+    left:70vw;
+  }
+  to{
+    left: 100vw;
+  }
+}
+
+@keyframes rightToLeft {
+  from{
+    left: 100vw;
+  }
+  to{
+    left: -50vw;
+  }
+}
+/* Deer and animals */
+#middledeer{
+  background-image: url(graphics/middledeer_update.svg);
+  transform: translateZ(-1px) scale(2.1) translateY(6400px);
+  height: 7300px;
+}
+
+.deer1{
+  position: absolute;
+  left: 20vw;
+  top: 2350px;
+  width: 15%;
+}
+
+.deer2{
+  position: absolute;
+  left:57vw;
+  top:2250px;
+  width: 12%;
+}
+
+.deer3{
+  position: absolute;
+  left: 51vw;
+  top: 2400px;
+  width: 9%;
+}
+
+.bear{
+  position: absolute;
+  top: 640px;
+  left: 35vw;
+  width: 15%;
+}
+
+.hare{
+  position: absolute;
+  top: 1570px;
+  left: 61vw;
+  width: 7%;
+}
+/* Factory  */
+#factory{
+  background-image: url(placeholder_svgs/factory.svg);
+  transform: translateZ(-1px)translateY(2760px);
+  height: 1700px;
+}
+
+.logging{
+  width: 100vw;
+}
+
+.road{
+top: 1vh;
+position: absolute;
+left: -4vw;
+}
+
+#precity{
+  background-image: url(graphics/precity.svg);
+  transform: translateZ(-1px) scale(2.5) translateY(9000px);
+  height: 6700px;
+}
+
+#city{
+  background-image:url(animations/Animation_CarBuilding.gif);
+  transform: translateZ(-1px) translateY(1170px);
+height:1850px;
+}
+/* Coast and Ocean */
+#coast {
+  background-image: url(graphics/coast_update.svg);
+  transform: translateZ(-0.5px) scale(1.52) translateX(-10px) translateY(17174px);
+  height:10000px;
+}
+
+.coast_front{
+   position: absolute;
+   width: 1366px;
+   top:2950px;
+  left: -25vw;
+}
+.ripple{
+  position: absolute;
+  height: 625px;
+  width: 50vw;
+  left: 46vw;
+  top: 3430px;
+}
+.wave{
+  width: 1373px;
+  height: 775px;
+  position:absolute;
+  top: 3480px;
+}
+
+.otter{
+  width: 10%;
+  position: absolute;
+  top: 3670px;
+  left:68vw;
+}
+
+.turtle{
+  width:20%;
+  position: absolute;
+  top: 4440px;
+
+}
+.seaweed{
+  height: 75px;
+  position: absolute;
+}
+.sw1{
+  left: 75vw;
+  top: 4150px;
+}
+
+.sw2{
+  left: 11vw;
+  top: 5000px;
+}
+
+.kelp{
+  left: 84vw;
+  top: 8835px;
+}
+
+.fish{
+  width: 10%;
+  position: absolute;
+  top: 8260px;
+}
+.seahorse {
+  width: 3%;
+  position: absolute;
+  top: 8000px;
+}
+
+.oct {
+  top: 8610px;
+  position: absolute;
+}
+
+.whale{
+  position: absolute;
+  top: 7300px;
+  opacity: 0.25;
+}
+
+#garbage{ 
+  background-image: url(placeholder_svgs/garbage.svg);
+  transform: translateZ(-0.5px) translateY(5340px);
+  height: 1765px; 
+}
+
+.bottle {
+  width: 5%;
+  position: absolute;
+  animation: 3s linear 1s infinite alternate bottle;
+}
+
+@keyframes bottle {
+  0% {
+    top: 560px;
+    left: 17vw;
+  }
+  100% {
+    top: 500px;
+    left: 20vw;
+  }
+}
+
+.mask {
+  width: 10%;
+  position: absolute;
+  animation: 4s linear 1s infinite alternate mask;
+}
+
+@keyframes mask {
+  0% {
+    top: 100px;
+    right: 20vw;
+  }
+  100% {
+    top: 200px;
+    right: 26vw;
+  }
+}
+
+.rings {
+  width: 5%;
+  position: absolute;
+  animation: 6s linear 1s infinite alternate rings;
+}
+
+@keyframes rings {
+  0% {
+    top: 1300px;
+    left: 10vw;
+  }
+  100% {
+    top: 1100px;
+    left: 15vw;
+  }
+}
+
+.bag {
+  width: 10%;
+  position: absolute;
+  animation: 3s linear 1s infinite alternate bag;
+}
+
+@keyframes bag {
+  0% {
+    top: 1400px;
+    right: 15vw;
+  }
+  100% {
+    top: 1450px;
+    right: 17vw;
+  }
+}
+
+.footer {
+  position: absolute;
+  top:8925px;
+  left: 10vw;
+}
+
+.fbutton1 {
+  margin: 10px;
+  top: 9075px;
+  position: absolute;
+  left: 48vw;
+  
+}
+
+.fbutton2 {
+  margin: 10px;
+  top: 8900px;
+  position: absolute;
+  left: 66vw;
+}
+
+.fbutton3 {
+  margin: 10px;
+  top: 8900px;
+  position: absolute;
+  left: 30vw;
+}
+
+@media screen and (max-width: 600px) {
+  .coast_front {
+    visibility: hidden;
+  }
+  .card {
+    left: auto;
+    margin-left: 100px;
+  }
+  .card6 {
+    margin-left: 75px;
+  }
+  .otter {
+    top: 3700px;
+  }
+  .deer1, .deer2, .deer3 {
+    min-width: 125px;
+  }
+  .bear {
+    min-width: 150px;
+  }
+  .hare {
+    min-width: 75px;
+  }
+  .oct {
+    width: 70%;
+  }
+
+  .fbutton1 {
+    margin: 10px;
+    top: 9450px;
+    position: absolute;
+    scale: 20%;
+    left: 5vw;
+  }
+  
+  .fbutton2 {
+    margin: 10px;
+    top: 9350px;
+    position: absolute;
+    left: 5vw;  
+  }
+  
+  .fbutton3 {
+    margin: 10px;
+    top: 9250px;
+    position: absolute;
+    left: 5vw;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width: 1500px) {
+  .fbutton1 {
+    margin: 10px;
+    top: 9075px;
+    position: absolute;
+    left: 40vw;
+    
+  }
+  
+  .fbutton2 {
+    margin: 10px;
+    top: 9250px;
+    position: absolute;
+    left: 40vw;
+  }
+  
+  .fbutton3 {
+    margin: 10px;
+    top: 8900px;
+    position: absolute;
+    left: 40vw;
+  }
+}
