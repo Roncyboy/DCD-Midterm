@@ -245,14 +245,14 @@ body {
 .bear{
   position: absolute;
   top: 640px;
-  left: 35vw;
+  left: 11vw;
   width: 15%;
 }
 
 .hare{
   position: absolute;
   top: 1570px;
-  left: 61vw;
+  left: 67vw;
   width: 7%;
 }
 /* Factory  */
@@ -274,8 +274,8 @@ left: -4vw;
 
 #precity{
   background-image: url(graphics/precity.svg);
-  transform: translateZ(-1px) scale(2.5) translateY(9000px);
-  height: 6700px;
+  transform: translateZ(-1px) scale(2.5) translateY(9900px);
+  height: 9000px;
 }
 
 #city{
